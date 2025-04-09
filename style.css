@@ -8,16 +8,32 @@
 
 body {
     background-color: black;
+    flex-direction: column;
 }
 
 .main {
     background-image: url("https://egirisim.com/wp-content/uploads/2023/03/netflix-film-sayisini-azaltiyor.png");
     background-position: center center;
-    background-size: max(1200px, 100vw);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 644px;
     position: relative;
 }
+
+@media (max-width: 768px) {
+    .main {
+        background-size: cover;
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        background-size: cover;
+        height: 300px;
+    }
+}
+
 
 .main .box {
     height: 644px;
@@ -44,8 +60,25 @@ nav svg {
     width: 12.23rem;
     display: block;
     right: 233px;
-    top: 3px;
+    top: 33px;
 }
+
+@media (max-width: 768px) {
+    nav svg {
+        width: 8rem;
+        right: 120px;
+        top: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav svg {
+        width: 6.5rem;
+        right: 80px;
+        top: 1px;
+    }
+}
+
 
 .er{
     color: white;
