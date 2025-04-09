@@ -37,12 +37,11 @@ nav {
     height: 100px;
 }
 
-nav svg {
+nav img {
     color: red;
     position: relative;
     z-index: 10;
     width: 12.23rem;
-    height: 2.5rem;
     display: block;
     right: 233px;
     top: 3px;
